@@ -60,12 +60,12 @@ header {
 }
 
 
-
 /* Montreal LOGO */
 header img {
 padding-left: 5rem;
 padding-top: 5px;
 height: 6vh;
+filter: invert(1);
 }
 
 /* links del header */

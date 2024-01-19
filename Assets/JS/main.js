@@ -114,29 +114,7 @@ const createshopcard = (product) => {
     </div>`
 }
 
-// Funcion para abrir y cerrar carrito
-const setCartVisibility = (isVisible) => {
-    opencart.checked = isVisible;
-};
-
-// Eliminar del carrito
-const removeFromCart = (id) => {
-
-    // Filtra los elementos que no tengan el id proporcionado
-    cart_list = cart_list.filter((item) => item.cart_id !== id);
-    rendershopcart(cart_list);
-
-    // Guardar en LocalStorage
-    saveinlocalstorage();
-}
-
-/// Local Storage JSON
-const saveinlocalstorage = () => {
-    localStorage.setItem('cart', JSON.stringify(cart_list));
-}
-
-
-
+// Carrito
 const rendershopcart = (cart_list) => {
     cartheader.innerHTML = cart_list.map(createshopcard).join("");
     let total = 0
@@ -150,17 +128,32 @@ const rendershopcart = (cart_list) => {
     console.log(totalPrice)
 }
 
+// Funcion para abrir y cerrar carrito
+const setCartVisibility = (isVisible) => {
+    opencart.checked = isVisible;
+};
+
+// Eliminar del carrito
+const removeFromCart = (id) => {
+
+    cart_list = cart_list.filter((item) => item.cart_id !== id);
+    rendershopcart(cart_list);
+
+    // Guardar en LocalStorage
+    saveinlocalstorage();
+}
+
+/// Local Storage JSON
+const saveinlocalstorage = () => {
+    localStorage.setItem('cart', JSON.stringify(cart_list));
+}
+
 // Conversor
 function convertirAValorNumerico(precio) {
     return Number(precio.slice(1).split('.').join(''))
 }
 
 //////////////////////////////////////////////////////////
-
-const init = () => {
-    rendercards (product_list);
-    Localstoragecart();
-};
 
 const Localstoragecart = () => {
     const itemscartsave = localStorage.getItem('cart');
@@ -169,5 +162,11 @@ const Localstoragecart = () => {
         rendershopcart(cart_list);
     }
 };
+
+const init = () => {
+    rendercards (product_list);
+    Localstoragecart();
+};
+
     
 init ();

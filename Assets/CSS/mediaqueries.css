@@ -153,17 +153,20 @@
     display: none;
 }
 
-.shop-list {
-    display: none;
-}
-
 .shop-list img {
     height: 30px;
     width: 30px;
 }
 
 .input-shop:checked ~ .shop-list {
-    display: flex; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideInFromHeader 0.7s ease-in-out; 
+    position: absolute;
+    top: 3.5rem;
+    background-color: rgb(29, 29, 29);
+    z-index: 5;
 }
 
 .shop-list {
@@ -201,6 +204,16 @@
     flex-direction: column;
     overflow-y: scroll;
     height: fit-content;
+    max-height: 17rem;
+    z-index: 5; /* Asegura que el carrito tenga un índice z mayor que el encabezado */
+}
+
+.carrito span {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--primary-color);
 }
 
 .input-shop:checked ~ .shop-list {

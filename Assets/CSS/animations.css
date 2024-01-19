@@ -30,3 +30,14 @@
   color: #ffffff;
   border: 2px solid var(--fifth-color);
 }
+
+
+/* Carrito animado */
+@keyframes slideInFromHeader {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
