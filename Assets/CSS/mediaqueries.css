@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
 :root {
     --primary-color: #fff;
     --secondary-color: rgb(57, 57, 57);
@@ -168,7 +172,7 @@
     right: 10px;
     flex-direction: column;
     position: absolute;
-    width: 320px;
+    width: 300px;
     height: fit-content;
     max-width: 50rem;
     padding-bottom: 20px;
@@ -308,6 +312,7 @@
         display: grid;
         gap: 5px;
         grid-template-columns: auto auto auto;
+        padding: 15px;
     }
 
 
@@ -334,8 +339,8 @@
         align-items: center;
         justify-content: center;
         padding: 2px;
-        width: 12rem;
-        height: 25rem;
+        width: 11rem;
+        height: 22rem;
         border-radius: 5px;
         margin: 0 auto;
     }
@@ -364,8 +369,8 @@
     .box-shop-imagen img {
         position: relative;
         z-index: -2;
-        width: 180px;
-        height: 180px;
+        width: auto;
+        height: 120px;
 
     }
 
@@ -383,22 +388,23 @@
     }
 
     .caja-dimensiones {
-        font-size: 13px;
+        font-size: 10px;
         padding-bottom: 0.5rem;
     }
 
     .add-to-cart button {
         display: flex;
-        width: 11rem;
+        height: 2rem;
+        width: 9rem;
     }
     
     .add-to-cart span {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     #cart-button {
-        height: 22px;
-        width: 22px;
+        height: 18px;
+        width: 18px;
     }
 
     /* Marcas */
