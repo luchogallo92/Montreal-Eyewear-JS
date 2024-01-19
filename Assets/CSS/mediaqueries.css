@@ -48,7 +48,8 @@
     }
 
     #logo-mobile {
-        display: none;
+        display: block;
+        filter: invert(1);
     }
 
     #ico-login {
@@ -309,7 +310,7 @@
         font-size: 40px;
         position: absolute;
         top: -1.5rem;
-        left: -6rem;
+        left: -5rem;
     }
 
     .hero-img {
