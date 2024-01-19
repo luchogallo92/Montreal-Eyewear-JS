@@ -1,6 +1,4 @@
-html, body {
-    overflow-x: hidden;
-}
+
 
 :root {
     --primary-color: #fff;
@@ -14,7 +12,7 @@ html, body {
 
 @media only screen and (max-width: 768px) and (min-width: 300px) {
 
-    body {
+    html,body {
         padding: 0;
         margin: 0;
         width: 100%;
@@ -201,7 +199,7 @@ html, body {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    height: 20rem;
+    height: fit-content;
 }
 
 .input-shop:checked ~ .shop-list {
@@ -331,7 +329,12 @@ html, body {
         display: grid;
         gap: 5px;
         grid-template-columns: auto auto auto;
-        padding: 15px;
+        padding: 1rem;
+    }
+
+    .filter button {
+        height: 2rem;
+        width: 6.5rem;
     }
 
 
