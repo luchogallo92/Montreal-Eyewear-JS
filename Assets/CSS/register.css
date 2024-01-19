@@ -1,0 +1,165 @@
+.register-box-gral {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50rem;
+    border: none;
+}
+
+.register-box-gral img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(/Assets/Login/login-background-4.jpg);
+    position: static;
+    opacity: 0.6;
+}
+
+.register-box {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 35rem;
+    width: 20rem;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    font-family: "inter";
+    padding: 15px;
+    gap: 5px;
+    background: rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    color: #f7f7f7;
+}
+
+.change {
+    text-align: center;
+ }
+ 
+ .change h1 {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 600;
+     font-size: 2rem;
+     margin-top: 1rem;
+     text-shadow: 1px 3px 5px rgb(54, 54, 54);
+ }
+ 
+ .change h2 {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 600;
+     font-size: 1.3rem;
+     margin-top: 1rem;
+     text-shadow: 1px 3px 5px rgb(54, 54, 54);
+ }
+ 
+ .change a{
+     text-decoration: none;
+     color: #ffffff;
+ }
+ 
+ .change a:hover{
+     text-decoration: none;
+     color: rgb(54, 54, 54);
+ }
+
+ #text-info-boxes {
+    color: #ffffff;
+    text-shadow: 1px 3px 5px rgb(54, 54, 54);
+    font-weight: 500;
+    margin-left: 10px;
+ }
+
+/* Username */
+
+.register-username {
+    height: 4rem;
+    width: 15rem;
+    display: flex;
+    color: rgb(54, 54, 54);
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.register-username input {
+    background-color: rgb(220, 220, 220);
+    width: 12rem;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+/* Password */
+
+.register-password {
+    height: 4rem;
+    width: 15rem;
+    display: flex;
+    color: rgb(54, 54, 54);
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.register-password input {
+    background-color: rgb(220, 220, 220);
+    width: 12rem;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Button access */
+
+.register-access {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    flex-direction: row;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(54, 54, 54);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.register-access input {
+    height: 2rem;
+    border: none;
+    background-color: rgb(220, 220, 220);
+}
+
+.register-send {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    text-align: center;
+}
+
+.register-send button {
+    text-decoration: none;
+    font-weight: 600;
+    width: 12rem;
+    height: 2.25rem;
+    border-radius: 20px;
+    background-color: #242325;
+    color: #ffffff;
+    border:none;
+    cursor: pointer;
+}
+
+.register-send a {
+    text-decoration: none;
+    color: #ffffff;
+}

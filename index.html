@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montreal Eyewear</title>
+
+<!-- link css -->
+<link rel="stylesheet" href="./Assets/CSS/styles.css">
+<!-- link animations -->
+<link rel="stylesheet" href="./Assets/CSS/animations.css">
+<!-- Mediaqueries -->
+<link rel="stylesheet" href="./Assets/CSS/mediaqueries.css">
+
+<!--------------- Tipografias -------------------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+
+<!---------------- Iconos ----------------->
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<!-- BODY-->
+<body>
+
+    
+
+<!-- Section Header -->
+<header>
+    <img src="./Assets/Logo/Logo-ppal.png" alt="" id="logo-mobile" class="dark-mode-logo">
+    
+    <label for="menu-toggle" class="nav_drop">
+    <img src="./Assets/Iconos/menu.png" alt="" class="nav_label">
+    </label>
+    <input type="checkbox" id="menu-toggle" class="input-checkbox">
+    
+
+    <div class="nav__container">
+         <ul class="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#3">Catalogo</a></li>
+            <li><a href="#4">Marcas</a></li>
+            <li><a href="#5">Servicios</a></li>
+            <li><a href="#6">Sobre nosotros</a></li>
+            <li><a href="#7">Articulos</a></li>
+        </ul>
+    </div>
+
+    <!-- Iconos laterales derecha -->
+    
+    <div class="iconos-header">
+
+        <div class="login">
+        <input type="checkbox" name="" id="menu-login" class="input-user">
+        <label for="menu-login"><img src="./Assets/Iconos/login.svg" alt="" id="ico-login">
+        </label>
+          
+        <div class="login-box">
+            <li><a href="./login.html">Iniciar sesion</a></li>
+            <li><a href="./register.html">Registrarme</a></li>  
+        </div>
+        </div>  
+
+        <div class="shopcart">
+            <input type="checkbox" id="menu-shop" class="input-shop">
+            <label for="menu-shop"><img src="./Assets/Iconos/shop.png" alt="" id="ico-shop">
+            </label> 
+
+            <div class="shop-list">
+                <div class="carrito">
+                </div>
+
+                <div class="shop-total-items">
+                    <h4 id="totalprice">Total $0</h4>
+                    <Span>Proceder a pago</Span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Section Home -->
+
+<section class="flex-layout">
+
+        <!-- hero-->
+<div class="Hero-section">
+    <div class="hero-img">
+    </div>
+            
+    <div class="hero-title">
+        <div class= "type-effect">
+            <h1>Shop now!</h1>
+        </div>
+    </div>
+</div>
+
+        
+
+<!-- Products Title -->
+<section class="filter" id="3">
+    <button id="filter-ant-todos" onclick="applyfilter('todos')">Todos</button>
+    <button id="filter-ant-sol" onclick="applyfilter('sol')">Sol</button>
+    <button id="filter-ant-receta" onclick="applyfilter('receta')">Receta</button>
+    <button id="filter-ant-aviador" onclick="applyfilter('aviador')">Aviador</button>
+    <button id="filter-ant-panto" onclick="applyfilter('panto')">Panto</button>   
+    <button id="filter-ant-resky" onclick="applyfilter('resky')">Resky</button>
+</section> 
+        
+
+<!-- SHOP Anteojos -->
+
+<section class="boxes-shop">
+</section>
+
+<section class="show-more-button">
+    <button id="show-more" onclick="showmorepages()">Ver mas</button>
+</section>
+
+<!-- Brands Title -->
+
+<section class="cards-brands" id="4">
+        <img src="./Assets/Marcas/Lac-01.svg" alt="">
+        <img src="./Assets/Marcas/cel-02.svg" alt="">
+        <img src="./Assets/Marcas/rayban-03.svg" alt="">
+        <img src="./Assets/Marcas/tommy-04.svg" alt="">
+        <img src="./Assets/Marcas/rust-05.svg" alt="">
+        <img src="./Assets/Marcas/vulk-06.svg" alt="">
+</section>
+
+<!-- Services Boxes -->
+
+<div class="title-compromise" id="5">
+    <h2>Comprometidos con tu Vision</h2>
+</div>
+
+<section class="box-reviews">
+
+    <div class="review_1">
+        <img src="./Assets/Reviews/woman-1.jpg">
+        <h3>Leila Moran</h3>
+        <p>Excelente relacion precio-producto, la linea de anteojos de receta me fascina!
+        </p>
+    </div>
+
+    <div class="review_1">
+        <img src="./Assets/Reviews//man-1.jpg">
+        <h3>Alex Mccoy</h3>
+        <p>La linea de anteojos de sol es mi preferida! Sobre todo para usar en mis dias al aire libre
+        </p>
+    </div>
+
+    <div class="review_1">
+        <img src="./Assets/Reviews//woman-2.jpg">
+        <h3>Antia Rubio</h3>
+        <p>Esta marca me encanta porque siempre combinan con mis prendas diarias
+        </p>
+    </div>
+
+    <div class="review_1">
+        <img src="./Assets/Reviews/man-4.jpg">
+        <h3>Gonzalo Parra</h3>
+        <p>Me encanta la variedad de productos y la buena atencion del cliente!
+        </p>
+    </div>
+
+ </section>
+
+   <!----- Contacto ----->
+   
+ <section class="box-contacto-gral" id="6">
+        
+    <div class="review_place">
+        <h3>Optica Montreal</h3>
+        <p>Atención calida, delicada y profesional con 35 años de trayectoria en el corazon de barrio de Palermo, personalizada y realizada por sus dueños. Venta especializada de anteojos Polaroid, tradicionales, de sol y lente azul
+        </p>
+    </div>
+
+    <div class="pay-method">
+    <h2>Trabajamos con todos los medios de pago</h2>
+        <img src="./Assets/Pay/785X40.jpg" alt="">
+    </div>
+
+    <div class="boxes-contacto">
+        
+        <p>Contactanos</p>
+
+        <div class="mediaqueries-mobile-contact">
+            <img src="./Assets/Iconos/phone.png" alt="">
+            <span>+54(11)663-8746</span>
+            <img src="./Assets/Iconos/mail-white.svg" alt="">
+            <span>opticamontreal.ba@gmail.com</span>
+        </div>
+    
+</section>
+
+<!-- Google maps location -->
+<section class="mapouter">
+        <div class="gmap_canvas">
+            <iframe width="1910" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=optica tankel&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
+            <a href="https://2yu.co"></a>
+            <a href="https://embedgooglemap.2yu.co/"></a>
+        </div>
+</section>
+
+<!-- Informes-->
+
+<section class="articulos" id="7">
+
+    <div id="cards-articulos">
+        <img src="https://img.freepik.com/fotos-premium/mujer-joven-poniendose-lentes-contacto-seleccion-concepto-lentes-contacto_151013-25354.jpg" alt="">
+        <a href="https://www.acuvue.com.ar/uso-de-lentes/cuidado-limpieza-lentes-de-contacto" target="_blank"><p>Cuidados y Limpieza de lentes de contacto</p></a>
+    </div>
+
+    <div id="cards-articulos">
+        <img src="https://cdn.shopify.com/s/files/1/0031/1817/0157/files/Blog_septiembre_1-01.jpg?v=1569001986" alt="" >
+        <a href="https://www.acuvue.com.ar/uso-de-lentes/cuidado-limpieza-lentes-de-contacto" target="_blank"><p>Limpieza y Cuidados de tus gafas</p></a>
+    </div>
+
+    <div  id="cards-articulos">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSljyRb47ozs2t7lhIdRX3Ia4QwZd0ccYz5Cw&usqp=CAU" alt="">
+        <a href="https://admiravision.es/tests-medicion-agudeza-visual/" target="_blank"><p>Test de agudeza visual</p></a>
+    </div>
+
+    <div  id="cards-articulos">
+        <img src="https://scontent.faep39-1.fna.fbcdn.net/v/t1.6435-9/118323602_119757816501986_3917226737149207058_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=XEkGPs43gkMAX-T9KRi&_nc_ht=scontent.faep39-1.fna&oh=00_AfDzwThB2BfhA6IcXoJQcnybdspT5LHIHwkyyPAnJcMVrA&oe=64B985AF" alt="">
+        <a href="https://www.acuvue.com.ar/uso-de-lentes/cuidado-limpieza-lentes-de-contacto" target="_blank"><p>Ventajas de los lentes Blue Light</p></a>
+    </div>
+
+</section>
+
+<!-- Seccion footer -->
+<footer>
+    <div class="box-footer">
+        <div class="box-footer-text-1">
+            <span>Montreal Info</span>
+           <ul><a href="">Acerca</a></ul>
+           <ul><a href="">Politica de Privacidad</a></ul>
+           <ul><a href="">Cookie de Privacidad</a></ul>
+           <ul><a href="">Condiciones de uso</a></ul>
+        </div>
+
+        <div class="box-footer-text-1">
+            <span>Links rapidos</span>
+           <ul><a href="">Garantia de producto</a></ul>
+           <ul><a href="">Transporte y entrega</a></ul>
+           <ul><a href="">Preferencias de consentimiento</a></ul>
+        </div>
+
+        <div class="box-social-media">
+           <h3>Seguinos en nuestras redes</h3>
+           <img src="./Assets/Footer/facebook.png">
+           <img src="./Assets/Footer/instagram.png">
+           <img src="./Assets/Footer/tik-tok.png">
+           <img src="./Assets/Footer/twitter.png">
+           <img src="./Assets/Footer/youtube.png">
+        </div>
+    </div>
+
+    <div class="title-creator">
+        <h3>Optica Montreal Eyewear</h3>
+    </div>
+</footer>
+    <script src="./Assets/JS/product_list.js"></script>
+    <script src="./Assets/JS/main.js"></script>
+    <script src="./Assets/JS/shop-cart.js"></script>
+</body>
+</html>

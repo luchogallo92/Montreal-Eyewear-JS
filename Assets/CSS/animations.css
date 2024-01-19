@@ -1,0 +1,32 @@
+/* Hero title Shop now */
+
+.type-effect h1 {
+  width: 9ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #FFE600;
+  background: linear-gradient(to top right, #FFE600 19%, #E00069 98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  40% {
+    border-color: transparent
+  }
+}
+
+ /* ------------- Cajas de shop ----------------*/
+
+ .caja-shop:hover {
+  cursor: pointer;
+  color: #ffffff;
+  border: 2px solid var(--fifth-color);
+}

@@ -1,0 +1,537 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: rgb(57, 57, 57);
+    --third-color: #5d2fdf;
+    --fourth-colour: ##009790;
+}
+
+
+/* -------------VERSION MOBILE ---------------*/
+
+@media only screen and (max-width: 768px) and (min-width: 300px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 3.5rem;
+        width: 100%;
+        justify-content: space-between;
+        position: fixed;
+        filter: drop-shadow(0 0 0.50rem var(--fifth-color));
+        z-index: 100;
+        font-family: "inter";
+    }
+
+    header img {
+        padding-left: 10px;
+        height: 30px;
+    }
+
+    .iconos-header {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        margin-right: 10px;
+        align-items: center;
+    }
+
+    #logo-mobile {
+        display: none;
+    }
+
+    #ico-login {
+        height: 30px;
+    }
+
+    #ico-shop {
+        height: 42px;
+    }
+
+
+    /* -----MENU PPAL MOBILE -----*/
+
+    .input-checkbox {
+        display: none;
+    }
+
+    .nav_drop {
+        display: flex;
+    }
+
+    .nav_label{
+        display: flex;
+    }
+
+    .nav_drop img {
+        margin-right: 10px;
+        width: auto;
+        cursor: pointer;
+        position: static;
+        filter: invert(1);
+    }
+
+    .nav__container{
+        display: none;
+    }
+
+    .nav__container {
+        text-align: center;
+        grid-column-gap: 50px;
+        position: absolute;
+        margin-top: 315px;
+        width: 100%;
+        height: 260px;
+        background-color: var(--secondary-color);
+        border-radius: 5px;
+    }
+
+    .nav__container ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .navbar a {
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .input-checkbox:checked ~ .nav__container  {
+        display: grid; 
+    }
+
+/* ------ Menu LOGIN ------ */
+    .login-box {
+        display: none;
+    }
+
+    .input-user {
+        display: none;
+    }
+
+    .input-user:checked ~ .login-box {
+        display: flex; 
+    }
+
+    .login-box {
+        padding-top: 13px;
+        flex-direction: column;
+        top: 40px;
+        right: 90px;
+        text-align: center;
+        gap: 30px;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: var(--secondary-color);
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .login-box a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+/* -----SHOP MOBILE ----- */
+
+.input-shop {
+    display: none;
+}
+
+.shop-list {
+    display: none;
+}
+
+.shop-list img {
+    height: 30px;
+    width: 30px;
+}
+
+.input-shop:checked ~ .shop-list {
+    display: flex; 
+}
+
+.shop-list {
+    top: 56px;
+    right: 10px;
+    flex-direction: column;
+    position: absolute;
+    width: 320px;
+    height: fit-content;
+    max-width: 50rem;
+    padding-bottom: 20px;
+    background-color: rgb(75, 75, 75);
+    z-index: -5;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.card-shop-list {
+    top: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    height: 8rem;
+    border: 5px solid white;
+    width: 19rem;
+    border-radius: 5px;
+    background-color: white;
+    text-align: left;
+}
+
+#shop-item-title {
+    text-align: left;
+    height: 0.4px;
+}
+
+#shop-info-text {
+    display: flex;
+    flex-direction: column;
+    height: 8rem;
+    gap: 20px;
+    width: 5rem;
+}
+
+.card-shop-list p{
+    height: 0.5px;
+}
+
+.card-shop-list img {
+    width: 5rem;
+    height: 5rem;
+    padding: 1px;
+}
+
+.card-shop-list button {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    border: none;
+}
+
+.card-shop-list button:hover {
+    border: 4px solid rgb(98, 156, 255);
+}
+
+.card-shop-list button:hover {
+    border: 4px solid rgb(98, 156, 255);
+}
+
+.shop-cart-actions {
+    display: flex;
+    align-items: center;
+    width: 5rem;
+    height: 5em;
+    gap: 10px;
+    text-align: center;
+    flex-direction: column;
+}
+
+#remove-item {
+    margin-top: 1px;
+    text-decoration: none;
+    color: red;
+}
+
+#shop-1-ico {
+    width: 30px;
+    height: 30px;
+}
+
+.shop-total-items {
+    top: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    height: 4rem;
+    border: 5px solid white;
+    width: 19rem;
+    border-radius: 5px;
+    background-color: white;
+    text-align: left;
+}
+
+/* Section Hero */
+
+    .Hero-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 20;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        height: 40vh;
+    }
+
+    .type-effect {
+        display: none;
+    }
+    .hero-img {
+        margin: 0;
+        z-index: -2;
+        height: 45vh;
+        width: 100%;
+        background-image: url(../Banner/Banner-bg-3.jpg);
+        background-size: cover;
+        position: static;
+        background-position-x: center;
+        background-position-y: 1rem;
+    }
+
+    /*  Filtros */
+    .filter {
+        display: grid;
+        gap: 5px;
+        grid-template-columns: auto auto auto;
+    }
+
+
+
+  /* cards anteojos */
+
+    .boxes-shop {
+        margin: 0 auto;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        max-width: 60%;
+        height: auto;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .caja-shop {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        width: 12rem;
+        height: 25rem;
+        border-radius: 5px;
+        margin: 0 auto;
+    }
+
+    .caja-categories {
+        align-items: center;
+    }
+    
+    .caja-categories span {
+        border-radius: 5px;
+        border-width: 1.2px;
+        color: #000000;
+        width: fit-content;
+        width: 10rem;
+        max-height: none;
+        height: 8px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .box-shop-imagen {
+        width: auto;
+        height: auto;
+    }
+    
+    .box-shop-imagen img {
+        position: relative;
+        z-index: -2;
+        width: 180px;
+        height: 180px;
+
+    }
+
+    .caja-title {
+        margin-top: 0.5rem;
+        color: #000000;
+    }
+
+    .caja-title h2 {
+        padding: 12px;
+    }
+
+    .caja-title p {
+        font-size: 15px;
+    }
+
+    .caja-dimensiones {
+        font-size: 13px;
+        padding-bottom: 0.5rem;
+    }
+
+    .add-to-cart button {
+        display: flex;
+        width: 11rem;
+    }
+    
+    .add-to-cart span {
+        font-size: 12px;
+    }
+
+    #cart-button {
+        height: 22px;
+        width: 22px;
+    }
+
+    /* Marcas */
+
+    .cards-brands {
+        display: grid;
+        gap: 5px;
+        grid-template-columns: auto auto auto;
+    }
+
+    .cards-brands img {
+        height: 100px;
+    }
+
+    /* Reviews */
+
+    .title-compromise  {
+        display: none;
+    }
+
+    .box-reviews {
+        display: none;
+    }
+
+    /* BOX SECTION CONTACTO */
+
+    .box-contacto-gral {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+        margin: 0 auto;
+    }
+
+    .review_place {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+        gap: 0px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .review_place h3 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .review_place p {
+        width: 95%;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+        color: #F5F5F5;
+        margin-top: 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* Metodos de pago */
+
+    .pay-method {
+        display: none;
+    }
+
+    /* Mobile contact */
+
+    .mediaqueries-mobile-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        text-decoration: none;
+    }
+
+    .mediaqueries-mobile-contact img {
+        height: 20px;
+        margin-bottom: -18px;
+    }
+
+    .box-name {
+        display: none;
+    }
+    .box-email {
+        display: none;
+    }
+    .box-phone {
+        display: none;
+    }
+    .box-mensaje {
+        display: none;
+    }
+    .button-send-info {
+        display: none;
+    }
+    /* google maps */
+
+    .mapouter {
+        display: none;
+    }
+    
+    /* footer */
+
+    .box-footer {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .box-footer-text-1 {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 15rem;
+    }
+
+    .box-social-media img {
+        margin-top: -0.5rem;
+        height: 40px;
+        padding-bottom: 10px;
+    }
+}
