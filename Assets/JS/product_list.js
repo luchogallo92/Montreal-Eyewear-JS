@@ -151,29 +151,29 @@ const product_list = [
 
     {
         id: "ant-18",
-        nombre: "Gentle M. Ging Hang",
-        precio: "$168.830",
-        category: ["sol","mascara"],
-        dimensiones: ["58 | 19 | 145"],
-        cardImg: "./Assets/Anteojos/ant_gentlem_chinh_hang.jpg",
+        nombre: "Gentle M. La Monde",
+        precio: "$155.200",
+        category: ["sol"],
+        dimensiones: ["52 | 19 | 145"],
+        cardImg: "./Assets/Anteojos/ant_gentlem_ban.png",
     },
 
     {
         id: "ant-19",
-        nombre: "Gentle M. Ging Hang",
-        precio: "$168.830",
-        category: ["sol","mascara"],
-        dimensiones: ["58 | 19 | 145"],
-        cardImg: "./Assets/Anteojos/ant_gentlem_chinh_hang.jpg",
+        nombre: "Gentle M. Bold",
+        precio: "$158.330",
+        category: ["sol"],
+        dimensiones: ["60 | 20 | 145"],
+        cardImg: "./Assets/Anteojos/ant_gentlem_bold.png",
     },
 
     {
         id: "ant-20",
-        nombre: "Gentle M. Ging Hang",
-        precio: "$168.830",
-        category: ["sol","mascara"],
-        dimensiones: ["58 | 19 | 145"],
-        cardImg: "./Assets/Anteojos/ant_gentlem_chinh_hang.jpg",
+        nombre: "Gentle M. Bold-2",
+        precio: "$160.130",
+        category: ["sol"],
+        dimensiones: ["61 | 20 | 145"],
+        cardImg: "./Assets/Anteojos/ant_gentlem_bold_2.png",
     },
 ];
 

@@ -3,7 +3,7 @@
 const filtercontainer = document.querySelector ('.filter')
 
 //limite de paginacion
-let limit = 10
+let limit = 5
 
 // llamado a Rendercards
 const callingrendercards = document.querySelector ('.boxes-shop')
