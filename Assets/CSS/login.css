@@ -239,7 +239,7 @@
         justify-content: space-between;
         position: fixed;
         z-index: 20;
-        background-color: #ffffff;
+        background-color: rgb(29, 29, 29);
         filter: drop-shadow(0 0 0.50rem rgb(74, 74, 74));
         z-index: 100;
         font-family: "inter";
@@ -248,6 +248,7 @@
     header img {
         padding-left: 10px;
         height: 30px;
+        filter: invert(1);
     }
 
     .input-checkbox {
@@ -266,6 +267,11 @@
 
     .iconos-header {
         display: none;
+    }
+
+    .input-checkbox:checked ~ .nav__container {
+        max-height: 5rem;
+        top: -260px;
     }
 
     /* footer */

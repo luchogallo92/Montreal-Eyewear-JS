@@ -5,6 +5,7 @@ const filtercontainer = document.querySelector ('.filter')
 //limite de paginacion
 let limit = 5
 
+
 // llamado a Rendercards
 const callingrendercards = document.querySelector ('.boxes-shop')
 
@@ -16,6 +17,11 @@ const opencart = document.getElementById ('menu-shop')
 
 // id para elementos de carro
 let cartId = 1;
+
+// llamado a brands
+const brandsRendering = document.querySelector('.cards-brands');
+
+
 
 
 //// filtrado de categorias ///
@@ -43,7 +49,7 @@ const showmorepages = () => {
 
 /// Render Boxes anteojos
 const createproductstemplate = (product) => {
-    const {id, nombre, precio, dimensiones, cardImg, favourite} = product;
+    const {id, nombre, precio, dimensiones, cardImg, } = product;
     
     return `
     <div class="caja-shop">
@@ -146,12 +152,28 @@ const removeFromCart = (id) => {
 /// Local Storage JSON
 const saveinlocalstorage = () => {
     localStorage.setItem('cart', JSON.stringify(cart_list));
-}
+};
 
 // Conversor
 function convertirAValorNumerico(precio) {
     return Number(precio.slice(1).split('.').join(''))
-}
+};
+
+//Renderizado de Brands
+const createBrandsTemplate = (brandsEyewear) => {
+    const { id, brandimg } = brandsEyewear;
+
+    const numberOfImages = 1;
+    const images = Array.from({ length: numberOfImages }, (_, index) => `
+        <img src="${brandimg}" id="${id}-${index + 1}">
+    `);
+
+    return images.join("");
+};
+
+const renderBrands = (brandsEyewear) => {
+    brandsRendering.innerHTML = brandsEyewear.map(createBrandsTemplate).join("");
+};
 
 //////////////////////////////////////////////////////////
 
@@ -166,6 +188,7 @@ const Localstoragecart = () => {
 const init = () => {
     rendercards (product_list);
     Localstoragecart();
+    renderBrands(Brandseyewear);
 };
 
     

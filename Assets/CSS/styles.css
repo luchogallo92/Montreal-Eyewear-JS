@@ -100,7 +100,8 @@ margin-right: 5rem;
 }
 
 .login-box {
-margin-top: 13px;
+margin-top: 15px;
+margin-right: -80px;
 position: absolute;
 width: 200px;
 height: 100px;

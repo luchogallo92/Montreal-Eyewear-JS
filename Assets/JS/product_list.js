@@ -178,3 +178,34 @@ const product_list = [
 ];
 
 const divideproduct_list = [];
+
+const Brandseyewear = [
+    {
+        id: "brand-01",
+        brandimg: "./Assets/Marcas/Lac-01.svg",
+    },
+    {
+        id: "brand-02",
+        brandimg: "./Assets/Marcas/cel-02.svg",
+    },
+
+    {
+        id: "brand-03",
+        brandimg: "./Assets/Marcas/rayban-03.svg",
+    },
+
+    {
+        id: "brand-04",
+        brandimg: "./Assets/Marcas/tommy-04.svg",
+    },
+
+    {
+        id: "brand-05",
+        brandimg: "./Assets/Marcas/rust-05.svg",
+    },
+
+    {
+        id: "brand-06",
+        brandimg: "./Assets/Marcas/vulk-06.svg",
+    },
+];
